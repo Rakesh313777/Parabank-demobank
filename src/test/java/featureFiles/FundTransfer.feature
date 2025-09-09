@@ -1,0 +1,40 @@
+
+ @FundSmoke
+Feature: Fund Transfer feature
+  
+    
+    Background:user should register or login first then only transfer the funds
+    #Given user should be on parabank homepage
+    #When user enter the valid username "Rakesh313"
+    #And user enter the valid password "Password123"
+    #And clicks on login button
+    #Then user should login successfully
+    
+    Given user should be on parabank Registration page
+    When user enter the valid firstName "rakesh"
+    And user enter the valid lastName "chir"
+    And user enter the valid address "hyd"
+    And user enter the valid city "hyd"
+    And user enter the valid state "telangana"
+    And user enter the valid zipCode "500072"
+    And user enter the valid phoneNumber "798982"
+    And user enter the valid ssNumber "3454"
+    And user enter the valid username1 "Rakesh313"
+    And user enter the valid password1 "Password123"
+    And user enter the valid confirmPassword "Password123"
+    And user clicks on registerButton
+   
+    Scenario: Successfull fund transfer between accounts
+    When user clicks on transfer funds from the menu
+    Then user should be redirected to the fund transfer page
+    When user select the following accounts to fund transfer 0 and 0
+    And  user enter the amount "25"
+    And  clicks on the transfer button 
+    Then user verify the transfer amount as a confirmation message is displayed
+    
+    
+    When user clicks on account overview
+    And  user clicks on receiver account number
+    Then user should see the transfered listed in the account details
+    
+    

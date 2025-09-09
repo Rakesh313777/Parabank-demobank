@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="12.391" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-09T13:05:54.185458800Z">
+<testcase classname="Fund Transfer feature" name="Successfull fund transfer between accounts" time="12.129">
+<system-out><![CDATA[
+Given user should be on parabank Registration page..........................passed
+When user enter the valid firstName "rakesh"................................passed
+And user enter the valid lastName "chir"....................................passed
+And user enter the valid address "hyd"......................................passed
+And user enter the valid city "hyd".........................................passed
+And user enter the valid state "telangana"..................................passed
+And user enter the valid zipCode "500072"...................................passed
+And user enter the valid phoneNumber "798982"...............................passed
+And user enter the valid ssNumber "3454"....................................passed
+And user enter the valid username1 "Rakesh313"..............................passed
+And user enter the valid password1 "Password123"............................passed
+And user enter the valid confirmPassword "Password123"......................passed
+And user clicks on registerButton...........................................passed
+When user clicks on transfer funds from the menu............................passed
+Then user should be redirected to the fund transfer page....................passed
+When user select the following accounts to fund transfer 0 and 0............passed
+And user enter the amount "25"..............................................passed
+And clicks on the transfer button...........................................passed
+Then user verify the transfer amount as a confirmation message is displayed.passed
+When user clicks on account overview........................................passed
+And user clicks on receiver account number..................................passed
+Then user should see the transfered listed in the account details...........passed
+]]></system-out>
+</testcase>
+</testsuite>

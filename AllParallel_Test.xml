@@ -1,0 +1,20 @@
+
+<suite name="Suite">
+
+	<parameter name="username" value="R@kesh313" />
+	<parameter name="password" value="password123" />
+	<test name="Chrome">
+		<parameter name="browsertype" value="chrome" />
+		<classes>
+			<class name="Runner.Parallel_AllRunner" />
+		</classes>
+	</test>
+
+	<test name="Edge">
+		<parameter name="browsertype" value="edge" />
+		<classes>
+			<class name="Runner.Parallel_AllRunner" />
+		</classes>
+	</test>
+
+</suite> 
