@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 9, 2025 06:35:53 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Sept 10, 2025 11:21:09 am</span>
 			</a>
 		</ul>
 	</div>
@@ -76,7 +76,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@FundSmoke</a></li>
+					<li><a href='#'>@Smoke</a></li>
+					<li><a href='#'>@LoginSmoke1</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -157,7 +158,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>22</span> steps passed</span>
+                    <span class='strong'>5</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -186,8 +187,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Fund Transfer feature</span>
-						<span class='test-time'>Sep 9, 2025 06:35:54 pm</span>
+						<span class='test-name'>login feature</span>
+						<span class='test-time'>Sept 10, 2025 11:21:10 am</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -197,127 +198,44 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
+	<div class='test-desc'>  we need to validate the login feature</div>
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 11.980</span>
+	<span class='duration right label'>00 00 04.354</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Successfull fund transfer between accounts</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: login with valid username and password</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@FundSmoke</span>
+				<span class='category label'>@Smoke</span>
+				<span class='category label'>@LoginSmoke1</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='3' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_should_be_on_parabank_registration_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user should be on parabank Registration page</div>
+			<div class="step-name" title="(stepDefinations.LoginStepDefination.user_should_be_on_parabank_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user should be on parabank homepage</div>
 
 
 		</li>
 		<li test-id='4' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_first_name(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user enter the valid firstName "rakesh"</div>
+			<div class="step-name" title="(stepDefinations.LoginStepDefination.user_enter_the_valid_username(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user enter the valid username "Rakesh313"</div>
 
 
 		</li>
 		<li test-id='5' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_last_name(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid lastName "chir"</div>
+			<div class="step-name" title="(stepDefinations.LoginStepDefination.user_enter_the_valid_password(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid password "Password123"</div>
 
 
 		</li>
 		<li test-id='6' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_address(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid address "hyd"</div>
+			<div class="step-name" title="(stepDefinations.LoginStepDefination.clicks_on_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on login button</div>
 
 
 		</li>
-		<li test-id='7' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_city(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid city "hyd"</div>
-
-
-		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_state(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid state "telangana"</div>
-
-
-		</li>
-		<li test-id='9' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_zip_code(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid zipCode "500072"</div>
-
-
-		</li>
-		<li test-id='10' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_phone_number(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid phoneNumber "798982"</div>
-
-
-		</li>
-		<li test-id='11' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_ss_number(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid ssNumber "3454"</div>
-
-
-		</li>
-		<li test-id='12' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_username1(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid username1 "Rakesh313"</div>
-
-
-		</li>
-		<li test-id='13' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_password1(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid password1 "Password123"</div>
-
-
-		</li>
-		<li test-id='14' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_enter_the_valid_confirm_password(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the valid confirmPassword "Password123"</div>
-
-
-		</li>
-		<li test-id='15' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.RegisterStepDefination.user_clicks_on_register_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on registerButton</div>
-
-
-		</li>
-		<li test-id='16' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.FundTransferStepDefination.user_clicks_on_transfer_funds_from_the_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user clicks on transfer funds from the menu</div>
-
-
-		</li>
-		<li test-id='17' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.FundTransferStepDefination.user_should_be_redirected_to_the_fund_transfer_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should be redirected to the fund transfer page</div>
-
-
-		</li>
-		<li test-id='18' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.FundTransferStepDefination.user_select_the_following_accounts_to_fund_transfer_and(java.lang.Integer,java.lang.Integer))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user select the following accounts to fund transfer 0 and 0</div>
-
-
-		</li>
-		<li test-id='19' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.FundTransferStepDefination.user_enter_the_amount(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enter the amount "25"</div>
-
-
-		</li>
-		<li test-id='20' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.FundTransferStepDefination.clicks_on_the_transfer_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the transfer button</div>
-
-
-		</li>
-		<li test-id='21' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.FundTransferStepDefination.user_verify_the_transfer_amount_as_a_confirmation_message_is_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user verify the transfer amount as a confirmation message is displayed</div>
-
-
-		</li>
-		<li test-id='22' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.AccountOverviewStepDefination.user_clicks_on_account_overview())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user clicks on account overview</div>
-
-
-		</li>
-		<li test-id='23' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.AccountOverviewStepDefination.user_clicks_on_receiver_account_number())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on receiver account number</div>
-
-
-		</li>
-		<li test-id='24' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinations.AccountOverviewStepDefination.user_should_see_the_transfer_listed_in_the_account_details())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should see the transfered listed in the account details</div>
+		<li test-id='7' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinations.LoginStepDefination.user_should_login_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user should login successfully</div>
 
 
 		</li>
@@ -367,7 +285,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@FundSmoke</span>
+						<span class='category-name'>@Smoke</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -389,8 +307,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 9, 2025 06:35:54 pm</td>
-										<td class='linked' test-id='2'>Successfull fund transfer between accounts</td>
+										<td>Sept 10, 2025 11:21:10 am</td>
+										<td class='linked' test-id='2'>login with valid username and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@LoginSmoke1</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sept 10, 2025 11:21:10 am</td>
+										<td class='linked' test-id='2'>login with valid username and password</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -427,25 +378,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 9, 2025 06:35:53 pm</div>
+					<div class='panel-lead'>Sept 10, 2025 11:21:09 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 9, 2025 06:36:06 pm</div>
+			 		<div class='panel-lead'>Sept 10, 2025 11:21:14 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 13.043</div>
+					<div class='panel-lead'>00 00 05.001</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -461,7 +412,16 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@FundSmoke</td>
+							<td>@Smoke</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@LoginSmoke1</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -495,8 +455,8 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 22,
-				passGrandChild: 22,
+				grandChildCount: 5,
+				passGrandChild: 5,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -508,7 +468,7 @@
 		
 		<script>
 			var timeline = {
-			        "Fund Transfer feature":11.984
+			        "login feature":4.357
 			};
 		</script>
 		

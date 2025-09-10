@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="12.256" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="15.522" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
@@ -60,5 +60,108 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="runScenario" classname="Runner.SmokeRunner" time="12.256"/>
+  <testcase name="runScenario" classname="Runner.SmokeRunner" time="15.522">
+    <failure message="invalid session id: session deleted as the browser has closed the connection&#10;from disconnected: not connected to DevTools&#10;  (Session info: chrome=139.0.7258.154)&#10;Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [859e5b36572da6979b18e7776f500255, findElement {value=//a[contains(@href,&apos;transfer.htm&apos;)], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.154, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\CHIRUM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54740/devtoo..., se:cdpVersion: 139.0.7258.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 859e5b36572da6979b18e7776f500255" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=139.0.7258.154)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [859e5b36572da6979b18e7776f500255, findElement {value=//a[contains(@href,'transfer.htm')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.154, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\CHIRUM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54740/devtoo..., se:cdpVersion: 139.0.7258.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 859e5b36572da6979b18e7776f500255
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at GenericMethodP.GenericMethodC.explicit_Wait_clickable(GenericMethodC.java:66)
+	at Allpages.FundTransferPage.transferFunds(FundTransferPage.java:40)
+	at stepDefinations.FundTransferStepDefination.user_clicks_on_transfer_funds_from_the_menu(FundTransferStepDefination.java:13)
+	at ✽.user clicks on transfer funds from the menu(file:///C:/Users/chirumalla/Documents/Nareshit%20Automation/parabank/src/test/java/featureFiles/FundTransfer.feature:28)
+</failure>
+    <system-out>
+@FundSmoke
+Scenario: Successfull fund transfer between accounts                          # file:///C:/Users/chirumalla/Documents/Nareshit%20Automation/parabank/src/test/java/featureFiles/FundTransfer.feature:27
+  Given user should be on parabank Registration page                          # stepDefinations.RegisterStepDefination.user_should_be_on_parabank_registration_page()
+  When user enter the valid firstName "rakesh"                                # stepDefinations.RegisterStepDefination.user_enter_the_valid_first_name(java.lang.String)
+  And user enter the valid lastName "chir"                                    # stepDefinations.RegisterStepDefination.user_enter_the_valid_last_name(java.lang.String)
+  And user enter the valid address "hyd"                                      # stepDefinations.RegisterStepDefination.user_enter_the_valid_address(java.lang.String)
+  And user enter the valid city "hyd"                                         # stepDefinations.RegisterStepDefination.user_enter_the_valid_city(java.lang.String)
+  And user enter the valid state "telangana"                                  # stepDefinations.RegisterStepDefination.user_enter_the_valid_state(java.lang.String)
+  And user enter the valid zipCode "500072"                                   # stepDefinations.RegisterStepDefination.user_enter_the_valid_zip_code(java.lang.String)
+  And user enter the valid phoneNumber "798982"                               # stepDefinations.RegisterStepDefination.user_enter_the_valid_phone_number(java.lang.String)
+  And user enter the valid ssNumber "3454"                                    # stepDefinations.RegisterStepDefination.user_enter_the_valid_ss_number(java.lang.String)
+  And user enter the valid username1 "Rakesh313"                              # stepDefinations.RegisterStepDefination.user_enter_the_valid_username1(java.lang.String)
+  And user enter the valid password1 "Password123"                            # stepDefinations.RegisterStepDefination.user_enter_the_valid_password1(java.lang.String)
+  And user enter the valid confirmPassword "Password123"                      # stepDefinations.RegisterStepDefination.user_enter_the_valid_confirm_password(java.lang.String)
+  And user clicks on registerButton                                           # stepDefinations.RegisterStepDefination.user_clicks_on_register_button()
+  When user clicks on transfer funds from the menu                            # stepDefinations.FundTransferStepDefination.user_clicks_on_transfer_funds_from_the_menu()
+      org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+      from disconnected: not connected to DevTools
+        (Session info: chrome=139.0.7258.154)
+      Build info: version: '4.34.0', revision: '707dcb4246*'
+      System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Command: [859e5b36572da6979b18e7776f500255, findElement {value=//a[contains(@href,'transfer.htm')], using=xpath}]
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.154, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\CHIRUM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54740/devtoo..., se:cdpVersion: 139.0.7258.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+      Session ID: 859e5b36572da6979b18e7776f500255
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+      	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+      	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+      	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+      	at GenericMethodP.GenericMethodC.explicit_Wait_clickable(GenericMethodC.java:66)
+      	at Allpages.FundTransferPage.transferFunds(FundTransferPage.java:40)
+      	at stepDefinations.FundTransferStepDefination.user_clicks_on_transfer_funds_from_the_menu(FundTransferStepDefination.java:13)
+      	at âœ½.user clicks on transfer funds from the menu(file:///C:/Users/chirumalla/Documents/Nareshit%20Automation/parabank/src/test/java/featureFiles/FundTransfer.feature:28)
+
+  Then user should be redirected to the fund transfer page                    # stepDefinations.FundTransferStepDefination.user_should_be_redirected_to_the_fund_transfer_page()
+  When user select the following accounts to fund transfer 0 and 0            # stepDefinations.FundTransferStepDefination.user_select_the_following_accounts_to_fund_transfer_and(java.lang.Integer,java.lang.Integer)
+  And user enter the amount "25"                                              # stepDefinations.FundTransferStepDefination.user_enter_the_amount(java.lang.String)
+  And clicks on the transfer button                                           # stepDefinations.FundTransferStepDefination.clicks_on_the_transfer_button()
+  Then user verify the transfer amount as a confirmation message is displayed # stepDefinations.FundTransferStepDefination.user_verify_the_transfer_amount_as_a_confirmation_message_is_displayed()
+  When user clicks on account overview                                        # stepDefinations.AccountOverviewStepDefination.user_clicks_on_account_overview()
+  And user clicks on receiver account number                                  # stepDefinations.AccountOverviewStepDefination.user_clicks_on_receiver_account_number()
+  Then user should see the transfered listed in the account details           # stepDefinations.AccountOverviewStepDefination.user_should_see_the_transfer_listed_in_the_account_details()
+</system-out>
+    <system-err>SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Sep 10, 2025 11:17:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+</system-err>
+  </testcase>
 </testsuite>

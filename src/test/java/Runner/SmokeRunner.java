@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
                             plugin = { "pretty","html:target/cucumber-reports", "json:target/json-reports.json", "junit:target/junit-reports.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failedrerun.txt" },
-                  tags = "@FundSmoke",
+                  tags = "@LoginSmoke1",
                   monochrome = true)
 public class SmokeRunner extends AbstractTestNGCucumberTests {
 
